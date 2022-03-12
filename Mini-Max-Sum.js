@@ -9,7 +9,7 @@ let iguales = arr.every((n)=> n == arr[0])
 if (iguales) {
     arr.pop()
     let sum = arr.reduce((a, b) => a + b)
-    return sum + ' ' + sum 
+    return console.log( sum + ' ' + sum )
 }
 let maxArr = arr.filter(e=> (e != min))
 let minArr = arr.filter(e => (e != max))
@@ -17,7 +17,7 @@ let minArr = arr.filter(e => (e != max))
 let maxSum = maxArr.reduce((a, b) => a + b );
 let minSum = minArr.reduce((a, b) => a + b );
 
-return maxSum + ' ' + minSum
+return console.log(minSum + ' ' + maxSum); 
 }
 
 miniMaxSum(arr)
